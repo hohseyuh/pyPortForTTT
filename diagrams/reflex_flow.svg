@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="752" viewBox="0 0 1120 752" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="bold" fill="#111827">Simple reflex agent: condition-action rules</text>
+<text x="24" y="56" font-size="13" fill="#4b5563">Rules are checked top to bottom; the first one that matches fires (if / elif / else).</text>
+<rect x="210.0" y="85.0" width="240" height="50" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<text x="330" y="106" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">Percept: current board</text>
+<text x="330" y="124" font-size="12" text-anchor="middle" fill="#4b5563">(sensors read all cells)</text>
+<line x1="330.0" y1="135.0" x2="330.0" y2="166.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<polygon points="330,167.0 495.0,202 330,237.0 165.0,202" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="330" y="207" font-size="13" text-anchor="middle" fill="#111827">Can I complete a line?</text>
+<rect x="605.0" y="176.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="730" y="198" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 1: WIN</text>
+<text x="730" y="216" font-size="12" text-anchor="middle" fill="#4b5563">play the winning cell</text>
+<line x1="495.0" y1="202.0" x2="601.0" y2="202.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="533.9" y="182.0" width="28.2" height="18" rx="3" fill="#ffffff"/>
+<text x="548.0" y="194.0" font-size="12" text-anchor="middle" fill="#16a34a">yes</text>
+<line x1="330.0" y1="237.0" x2="330.0" y2="259.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="344.0" y="244.0" width="21.4" height="18" rx="3" fill="#ffffff"/>
+<text x="348.0" y="256.0" font-size="12" text-anchor="start" fill="#dc2626">no</text>
+<line x1="855" y1="202" x2="930" y2="202" stroke="#6b7280" stroke-width="1.8"/>
+<polygon points="330,259.0 495.0,294 330,329.0 165.0,294" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="330" y="299" font-size="13" text-anchor="middle" fill="#111827">Can the opponent complete a line?</text>
+<rect x="605.0" y="268.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="730" y="290" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 2: BLOCK</text>
+<text x="730" y="308" font-size="12" text-anchor="middle" fill="#4b5563">block that cell</text>
+<line x1="495.0" y1="294.0" x2="601.0" y2="294.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="533.9" y="274.0" width="28.2" height="18" rx="3" fill="#ffffff"/>
+<text x="548.0" y="286.0" font-size="12" text-anchor="middle" fill="#16a34a">yes</text>
+<line x1="330.0" y1="329.0" x2="330.0" y2="351.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="344.0" y="336.0" width="21.4" height="18" rx="3" fill="#ffffff"/>
+<text x="348.0" y="348.0" font-size="12" text-anchor="start" fill="#dc2626">no</text>
+<line x1="855" y1="294" x2="930" y2="294" stroke="#6b7280" stroke-width="1.8"/>
+<polygon points="330,351.0 495.0,386 330,421.0 165.0,386" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="330" y="391" font-size="13" text-anchor="middle" fill="#111827">Is the centre free?</text>
+<rect x="605.0" y="360.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="730" y="382" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 3: CENTRE</text>
+<text x="730" y="400" font-size="12" text-anchor="middle" fill="#4b5563">take the centre</text>
+<line x1="495.0" y1="386.0" x2="601.0" y2="386.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="533.9" y="366.0" width="28.2" height="18" rx="3" fill="#ffffff"/>
+<text x="548.0" y="378.0" font-size="12" text-anchor="middle" fill="#16a34a">yes</text>
+<line x1="330.0" y1="421.0" x2="330.0" y2="443.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="344.0" y="428.0" width="21.4" height="18" rx="3" fill="#ffffff"/>
+<text x="348.0" y="440.0" font-size="12" text-anchor="start" fill="#dc2626">no</text>
+<line x1="855" y1="386" x2="930" y2="386" stroke="#6b7280" stroke-width="1.8"/>
+<polygon points="330,443.0 495.0,478 330,513.0 165.0,478" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="330" y="483" font-size="13" text-anchor="middle" fill="#111827">Opponent corner with free opposite?</text>
+<rect x="605.0" y="452.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="730" y="474" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 4: OPPOSITE CORNER</text>
+<text x="730" y="492" font-size="12" text-anchor="middle" fill="#4b5563">take the opposite corner</text>
+<line x1="495.0" y1="478.0" x2="601.0" y2="478.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="533.9" y="458.0" width="28.2" height="18" rx="3" fill="#ffffff"/>
+<text x="548.0" y="470.0" font-size="12" text-anchor="middle" fill="#16a34a">yes</text>
+<line x1="330.0" y1="513.0" x2="330.0" y2="535.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="344.0" y="520.0" width="21.4" height="18" rx="3" fill="#ffffff"/>
+<text x="348.0" y="532.0" font-size="12" text-anchor="start" fill="#dc2626">no</text>
+<line x1="855" y1="478" x2="930" y2="478" stroke="#6b7280" stroke-width="1.8"/>
+<polygon points="330,535.0 495.0,570 330,605.0 165.0,570" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="330" y="575" font-size="13" text-anchor="middle" fill="#111827">Is a corner free?</text>
+<rect x="605.0" y="544.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="730" y="566" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 5: CORNER</text>
+<text x="730" y="584" font-size="12" text-anchor="middle" fill="#4b5563">take a corner</text>
+<line x1="495.0" y1="570.0" x2="601.0" y2="570.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="533.9" y="550.0" width="28.2" height="18" rx="3" fill="#ffffff"/>
+<text x="548.0" y="562.0" font-size="12" text-anchor="middle" fill="#16a34a">yes</text>
+<line x1="330.0" y1="605.0" x2="330.0" y2="627.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="344.0" y="612.0" width="21.4" height="18" rx="3" fill="#ffffff"/>
+<text x="348.0" y="624.0" font-size="12" text-anchor="start" fill="#dc2626">no</text>
+<line x1="855" y1="570" x2="930" y2="570" stroke="#6b7280" stroke-width="1.8"/>
+<rect x="205.0" y="630.0" width="250" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="330" y="652" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">rule 6: ANY</text>
+<text x="330" y="670" font-size="12" text-anchor="middle" fill="#4b5563">take any free cell</text>
+<line x1="455" y1="656" x2="930" y2="656" stroke="#6b7280" stroke-width="1.8"/>
+<line x1="930" y1="202" x2="930" y2="656" stroke="#6b7280" stroke-width="1.8"/>
+<rect x="945.0" y="399.0" width="150" height="60" rx="10" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+<text x="1020" y="425.0" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">Actuator</text>
+<text x="1020" y="443.0" font-size="12" text-anchor="middle" fill="#4b5563">mark (row, col)</text>
+<line x1="930.0" y1="429.0" x2="942.0" y2="429.0" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="180.0" y="722.0" font-size="12" text-anchor="start" fill="#4b5563">The agent has no memory: the same board always gives the same move.</text>
+</svg>
